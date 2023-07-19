@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/48d6c73121.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">My Skills</a></li>
+          <li><a href="#portfolio">My Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>FRONTEND WEB DEVELOPER</p>
+        <h1>Hi, I'm <span>Sravani.</span><br><h6>Nice to meet you.</h6></h1>
+        <H5> I design and code beautifully simple things, and I love what I do.</H5>
+        
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/sravani2.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="para">
+            I am an organised, efficient and hard working person, and am willing to discover and accept new ideas which can be put into practice effectively. I am a good listener and learner, able to communicate well with a group and on an individual level. I am able to motivate and direct my talents and skills to meet objectives.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+
+
+          </div>
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li><span>Bachelor Of Technology</span><br><br>LakiReddy Bali Reddy College of Engineering, Mylavaram.<br>CGPA : 9.37</li>
+              <li><span>Intermediate</span><br><br>Aditya Junior College<br>GPA : 10.00</li>
+              <li><span>SSC</span><br><br>St.Mary's English Medium High School<br>GPA : 9.70</li>
+            </ul>
+          </div>
+          
+    
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+  <div id="services">
+   <div class="container">
+    <h1 class="sub-title">My Skills</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Frontend Web Development</h2><br>
+        <p>Create websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app</p>
+       
+      </div>
+      <div>
+        
+        <i class="fas fa-project-diagram"></i>
+        <h2>Project Management</h2><br>
+        <p>I am good in organizing and coordinating tasks, setting deadlines, and working collaboratively with teams.</p>
+
+      </div>
+      <div>
+        
+        <i class="fa-brands fa-python"></i>
+        <h2>Django</h2><br>
+        <p>If you don't have time to build everything by your self, you can use Django framework, it will do almost everything for you. What you need to do is creating data models.</p>
+        
+      </div>
+      <div>
+        
+<i class="fa-solid fa-keyboard"></i>
+        <h2>Programming languages</h2><br>
+        <p>Java(Intermediate)<br>Python(Intermediate)<br>C(Intermediate)</p>
+           
+      </div>
+
+    </div>
+   </div>
+  </div>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/women.jpg">
+          <div class="layer">
+            <h2>Go Women</h2><br>
+            <p>This is a web application that has been designed using Django. It is a 
+              website dedicated to women that aims to spread awareness about various issues 
+              including health education and safety.<br><br>
+             <b> Techologies used :</b> Python, HTML/CSS, JS, RDBMS, Django Framework.
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/homework.jpg">
+          <div class="layer">
+            <h2>Student Corner</h2><br>
+            <p>It is a web application that was developed using Django for students.
+              In this website, students can create notes, store them permanently and delete 
+              them at any time. They can also add homework, assign deadlines and add their
+              daily to-do lists as well.<br> <br>
+              <b> Techologies used : </b>Python, HTML/CSS, JS, RDBMS, Django Framework.
+
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/bil.jpg">
+          <div class="layer">
+            <h2>Shopping Bill</h2><br>
+            <p>Data Structures application to print shopping bill using Linked List. </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <div id="contact">
+    <div class="container">
+     <div class="row">
+       <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>sravani.7902@gmail.com</p>
+        <p> <i class="fas fa-phone-square-alt"></i>0123456789</p>
+        
+       </div>
+       <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+       </div>
+    </div>
+    </div>
+    <div class="copyright">
+      <div class="social-icons">
+        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    
+  </div>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents"); 
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    } 
+  </script>
+  <script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu()
+    {
+      sidemeu.style.right="0";
+    }
+    function closemenu()
+    {
+      sidemeu.style.right="-200px";
+    }
+  </script>
+  
+</body>
+
+</html>
